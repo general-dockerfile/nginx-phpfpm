@@ -11,6 +11,8 @@ ARG RESTY_APK_REPO_URL="http://openresty.org/package/alpine/v${RESTY_IMAGE_BASE_
 ARG RESTY_APK_VERSION="1.21.4.1-r0"
 ARG PHP_APK_VERSION="7.4.29-r0"
 
+LABEL maintainer="lengyuewusheng<bsxlyws@163.com>"
+
 LABEL resty_image_base="${RESTY_IMAGE_BASE}"
 LABEL resty_image_tag="${RESTY_IMAGE_BASE_TAG}"
 LABEL resty_apk_key_url="${RESTY_APK_KEY_URL}"
