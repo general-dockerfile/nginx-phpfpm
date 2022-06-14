@@ -87,7 +87,6 @@ RUN wget -O "/etc/apk/keys/$(basename ${RESTY_APK_KEY_URL})" "${RESTY_APK_KEY_UR
     php7-sockets=${PHP_APK_VERSION} \
     php7-sodium=${PHP_APK_VERSION} \
     php7-sqlite3=${PHP_APK_VERSION} \
-    php7-static=${PHP_APK_VERSION} \
     php7-sysvmsg=${PHP_APK_VERSION} \
     php7-sysvsem=${PHP_APK_VERSION} \
     php7-sysvshm=${PHP_APK_VERSION} \
