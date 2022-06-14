@@ -1,0 +1,16 @@
+/usr/local/nginx/logs/*log {
+    create 0664 nobody root
+    hourly
+    rotate 144
+    missingok
+    ifempty
+    compress
+    createolddir 0755 nobody root
+    dateext
+    dateformat .%Y%m%d%H
+    datehourago
+    sharedscripts
+    postrotate
+        /bin/kill -USR1 `cat /run/nginx.pid 2>/dev/null` 2>/dev/null || true
+    endscript
+}
